@@ -1,0 +1,9 @@
+from google.colab import files
+import pandas as pd
+
+# Upload file
+uploaded = files.upload()
+
+# Load into DataFrame (replace with your uploaded filename if needed)
+df = pd.read_excel("sku_sales.xlsx")
+print(df.head())
